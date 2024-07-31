@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffcc33, #ff6699);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #fff;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    box-shadow: inset o 5px 10px #ccc, inset -5px -5px 10px #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(145deg, #f9f9f9, #e6e6e6);
+    box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #fff;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #e6e6e6, #d4d4d4);
+    box-shadow: 5px 5px 15px #bbb, -5px -5px 15px #fff;
+}
+
+button:active {
+    background: linear-gradient(145deg, #d4d4d4, #c2c2c2);
+    box-shadow: inset 5px 5px 10px #aaa, inset -5px -5px 10px #fff;
+}
